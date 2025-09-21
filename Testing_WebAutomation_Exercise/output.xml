@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-09-21T16:02:44.348515" rpa="false" schemaversion="5">
+<suite id="s1" name="Testfile" source="C:\Users\sathish kumar\OneDrive\Desktop\Testing_Practice_Projects\sathishkumarnmanju\Testing_WebAutomation_Exercise\Testfile.robot">
+<test id="s1-t1" name="Open Automation Exercise Website Home Page" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-21T16:02:44.543085" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\sathish kumar\\OneDrive\\Desktop\\Testing_Practice_Projects\\sathishkumarnmanju\\Testing_WebAutomation_Exercise\\browser\\traces\\temp\\23b3c798-cd14-436c-82e2-9b2699d9acfe"}</msg>
+<msg time="2025-09-21T16:02:44.586865" level="INFO">Starting Browser process C:\Users\sathish kumar\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49839</msg>
+<msg time="2025-09-21T16:02:45.976311" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\sathish kumar\\OneDrive\\Desktop\\Testing_Practice_Projects\\sathishkumarnmanju\\Testing_WebAutomation_Exercise\\browser\\traces\\temp\\23b3c798-cd14-436c-82e2-9b2699d9acfe"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-21T16:02:44.542061" elapsed="1.434588"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-21T16:02:51.636051" level="INFO">Successfully initialized new page object and opened url: https://www.automationexercise.com/</msg>
+<msg time="2025-09-21T16:02:51.636166" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-21T16:02:45.977521" elapsed="5.658906"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-09-21T16:02:51.676844" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-09-21T16:02:51.636945" elapsed="0.040344"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:02:51.737982" level="INFO">Waited for Element with selector xpath=//img[@alt='Website for automation practice'] at state visible</msg>
+<arg>xpath=//img[@alt='Website for automation practice']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:02:51.678141" elapsed="0.060259"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 1. Successfully opened the Automation Exercise website</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:02:51.739118" elapsed="0.000915"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:02:53.741543" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:02:51.740530" elapsed="2.001197"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:02:53.743405" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Signup / Login']'.</msg>
+<arg>xpath=//a[normalize-space()='Signup / Login']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:53.742455" elapsed="1.441368"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:02:55.258388" level="INFO">Waited for Element with selector xpath=//h2[normalize-space()='New User Signup!'] at state visible</msg>
+<arg>xpath=//h2[normalize-space()='New User Signup!']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.184424" elapsed="0.074161"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 2. Successfully navigated to Signup/Login page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.259135" elapsed="0.000592"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-21T16:02:55.260674" level="INFO">${timestamp} = 1758450775515</msg>
+<var>${timestamp}</var>
+<arg>str(int(time.time())) + str(random.randint(100,999))</arg>
+<arg>modules=time,random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.260169" elapsed="0.000542"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-21T16:02:55.261241" level="INFO">${email} = santhosh_1758450775515@example.com</msg>
+<var>${email}</var>
+<arg>santhosh_${timestamp}@example.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.260942" elapsed="0.000333"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:02:55.262014" level="INFO">Fills the text 'Santhosh Kumar N' in the given field.</msg>
+<arg>xpath=//input[@placeholder='Name']</arg>
+<arg>Santhosh Kumar N</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.261489" elapsed="0.015525"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:02:55.278168" level="INFO">Fills the text 'santhosh_1758450775515@example.com' in the given field.</msg>
+<arg>xpath=//input[@data-qa='signup-email']</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.277482" elapsed="0.025564"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Using email: ${email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.303498" elapsed="0.000637"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:02:55.323200" level="INFO">Waited for Element with selector xpath=//button[normalize-space()='Signup'] at state visible</msg>
+<arg>xpath=//button[normalize-space()='Signup']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.304493" elapsed="0.018952"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:02:55.328616" level="INFO">Clicks the element 'xpath=//button[normalize-space()='Signup']'.</msg>
+<arg>xpath=//button[normalize-space()='Signup']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:55.327720" elapsed="0.744792"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:02:56.136181" level="INFO">Waited for Element with selector xpath=//b[normalize-space()='Enter Account Information'] at state visible</msg>
+<arg>xpath=//b[normalize-space()='Enter Account Information']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:02:56.073111" elapsed="0.063231"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 3. Successfully navigated to Enter Account Information page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:02:56.137372" elapsed="0.000420"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:02:58.138662" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:02:56.138019" elapsed="2.000853"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:02:58.140077" level="INFO">Clicks the element 'id=id_gender1'.</msg>
+<arg>id=id_gender1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.139494" elapsed="0.065702"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:02:58.206290" level="INFO">Fills the text 'Santhosh Kumar N' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Santhosh Kumar N</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.205582" elapsed="0.013665"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:02:58.220297" level="INFO">Fills the text 'Santhosh@123' in the given field.</msg>
+<arg>id=password</arg>
+<arg>Santhosh@123</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.219748" elapsed="0.013618"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-09-21T16:02:58.235253" level="INFO">Selects the option(s) 20 by attribute SelectAttribute.value from element id=days.</msg>
+<arg>id=days</arg>
+<arg>value</arg>
+<arg>20</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.234351" elapsed="0.053405"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-09-21T16:02:58.288942" level="INFO">Selects the option(s) 5 by attribute SelectAttribute.value from element id=months.</msg>
+<arg>id=months</arg>
+<arg>value</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.288170" elapsed="0.028571"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-09-21T16:02:58.320103" level="INFO">Selects the option(s) 1995 by attribute SelectAttribute.value from element id=years.</msg>
+<arg>id=years</arg>
+<arg>value</arg>
+<arg>1995</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.319434" elapsed="0.040043"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:02:58.365589" level="INFO">Clicks the element 'id=newsletter'.</msg>
+<arg>id=newsletter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.364647" elapsed="0.093338"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:02:58.459053" level="INFO">Clicks the element 'id=optin'.</msg>
+<arg>id=optin</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.458411" elapsed="0.062455"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:00.522392" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:02:58.521215" elapsed="2.001386"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.524381" level="INFO">Fills the text 'Santhosh' in the given field.</msg>
+<arg>id=first_name</arg>
+<arg>Santhosh</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.523359" elapsed="0.024635"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.549580" level="INFO">Fills the text 'Kumar N' in the given field.</msg>
+<arg>id=last_name</arg>
+<arg>Kumar N</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.548437" elapsed="0.022857"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.572807" level="INFO">Fills the text 'TestLeaf' in the given field.</msg>
+<arg>id=company</arg>
+<arg>TestLeaf</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.571885" elapsed="0.030105"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.603215" level="INFO">Fills the text '123, ABC Street' in the given field.</msg>
+<arg>id=address1</arg>
+<arg>123, ABC Street</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.602446" elapsed="0.026183"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.629838" level="INFO">Fills the text 'Chennai, India' in the given field.</msg>
+<arg>id=address2</arg>
+<arg>Chennai, India</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.629146" elapsed="0.039603"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-09-21T16:03:00.670509" level="INFO">Selects the option(s) India by attribute SelectAttribute.label from element id=country.</msg>
+<arg>id=country</arg>
+<arg>text</arg>
+<arg>India</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.669357" elapsed="0.029775"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.700767" level="INFO">Fills the text 'Tamil Nadu' in the given field.</msg>
+<arg>id=state</arg>
+<arg>Tamil Nadu</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.699747" elapsed="0.020139"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.721365" level="INFO">Fills the text 'Chennai' in the given field.</msg>
+<arg>id=city</arg>
+<arg>Chennai</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.720568" elapsed="0.017590"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.739452" level="INFO">Fills the text '600001' in the given field.</msg>
+<arg>id=zipcode</arg>
+<arg>600001</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.738792" elapsed="0.020320"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:00.760536" level="INFO">Fills the text '9876543210' in the given field.</msg>
+<arg>id=mobile_number</arg>
+<arg>9876543210</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.759628" elapsed="0.021165"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:02.783184" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:00.781307" elapsed="2.002456"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:02.785721" level="INFO">Clicks the element 'xpath=//button[normalize-space()='Create Account']'.</msg>
+<arg>xpath=//button[normalize-space()='Create Account']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:02.784542" elapsed="2.127677"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:04.973382" level="INFO">Waited for Element with selector xpath=//b[normalize-space()='Account Created!'] at state visible</msg>
+<arg>xpath=//b[normalize-space()='Account Created!']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:04.912766" elapsed="0.060828"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 4. Successfully created a new account</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:04.974153" elapsed="0.000535"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:04.975654" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Continue']'.</msg>
+<arg>xpath=//a[normalize-space()='Continue']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:04.974972" elapsed="0.756585"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:05.780409" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Logged in as Santhosh Kumar N'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Logged in as Santhosh Kumar N']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:05.732689" elapsed="0.047980"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 5. Successfully logged in as Santhosh Kumar N</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:05.781123" elapsed="0.000573"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:10.783289" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:05.782169" elapsed="5.001522"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:10.795944" level="INFO">Waited for Element with selector xpath=//a[@href='/products'] at state visible</msg>
+<arg>xpath=//a[@href='/products']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:10.784837" elapsed="0.011440"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:10.798054" level="INFO">Clicks the element 'xpath=//a[@href='/products']'.</msg>
+<arg>xpath=//a[@href='/products']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:10.796869" elapsed="0.803580"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:11.686367" level="INFO">Waited for Element with selector id=search_product at state visible</msg>
+<arg>id=search_product</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:11.600917" elapsed="0.085635"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:11.687712" level="INFO">Fills the text 'T-Shirt' in the given field.</msg>
+<arg>id=search_product</arg>
+<arg>T-Shirt</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:11.687094" elapsed="0.010771"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:11.707409" level="INFO">Waited for Element with selector xpath=//button[@id='submit_search'] at state visible</msg>
+<arg>xpath=//button[@id='submit_search']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:11.698253" elapsed="0.009447"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:11.708784" level="INFO">Clicks the element 'xpath=//button[@id='submit_search']'.</msg>
+<arg>xpath=//button[@id='submit_search']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:11.708145" elapsed="0.892803"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 6. Successfully searched for T-Shirt</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:12.601395" elapsed="0.000632"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:14.603138" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:12.602274" elapsed="2.001029"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:14.624213" level="INFO">Waited for Element with selector xpath=//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1] at state visible</msg>
+<arg>xpath=//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:14.603803" elapsed="0.020575"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:14.625582" level="INFO">Clicks the element 'xpath=//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]'.</msg>
+<arg>xpath=//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:14.624764" elapsed="1.032016"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:15.710209" level="INFO">Waited for Element with selector xpath=//button[normalize-space()='Add to cart'] at state visible</msg>
+<arg>xpath=//button[normalize-space()='Add to cart']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:15.657193" elapsed="0.053250"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:15.712031" level="INFO">Clicks the element 'xpath=//button[normalize-space()='Add to cart']'.</msg>
+<arg>xpath=//button[normalize-space()='Add to cart']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:15.711117" elapsed="0.052883"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:16.601978" level="INFO">Waited for Element with selector xpath=//button[normalize-space()='Continue Shopping'] at state visible</msg>
+<arg>xpath=//button[normalize-space()='Continue Shopping']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:15.764514" elapsed="0.837634"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:16.603251" level="INFO">Clicks the element 'xpath=//button[normalize-space()='Continue Shopping']'.</msg>
+<arg>xpath=//button[normalize-space()='Continue Shopping']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:16.602707" elapsed="0.054502"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 7. Successfully added T-Shirt to cart</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:16.657709" elapsed="0.000611"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:18.659386" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:16.658612" elapsed="2.001037"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:18.671659" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Cart'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Cart']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:18.660500" elapsed="0.011566"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:18.674468" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Cart']'.</msg>
+<arg>xpath=//a[normalize-space()='Cart']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:18.672970" elapsed="0.816652"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:19.525476" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Proceed To Checkout'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Proceed To Checkout']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:19.490395" elapsed="0.035330"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:19.527079" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Proceed To Checkout']'.</msg>
+<arg>xpath=//a[normalize-space()='Proceed To Checkout']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:19.526275" elapsed="0.812340"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 10. Successfully Proceeding with checkout</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:20.339080" elapsed="0.002208"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:22.341970" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:20.341604" elapsed="2.000526"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:22.343937" level="INFO">Fills the text 'Products are good. Please deliver between 10 AM to 5 PM.' in the given field.</msg>
+<arg>xpath=//textarea[@name='message']</arg>
+<arg>Products are good. Please deliver between 10 AM to 5 PM.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:22.342726" elapsed="0.024874"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:22.370294" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Place Order']'.</msg>
+<arg>xpath=//a[normalize-space()='Place Order']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:22.369406" elapsed="0.792305"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:28.162955" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:23.162167" elapsed="5.000931"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:28.183850" level="INFO">Waited for Element with selector xpath=//h2[normalize-space()='Payment'] at state visible</msg>
+<arg>xpath=//h2[normalize-space()='Payment']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:28.163532" elapsed="0.020755"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 11. Successfully navigated to Payment page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:28.184847" elapsed="0.000824"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:30.187136" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:28.186298" elapsed="2.001049"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:30.189262" level="INFO">Fills the text 'Santhosh Kumar N' in the given field.</msg>
+<arg>xpath=//input[@name='name_on_card']</arg>
+<arg>Santhosh Kumar N</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.188163" elapsed="0.029173"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:30.221795" level="INFO">Fills the text '4111111111111111' in the given field.</msg>
+<arg>xpath=//input[@name='card_number']</arg>
+<arg>4111111111111111</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.218859" elapsed="0.030600"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:30.252211" level="INFO">Fills the text '123' in the given field.</msg>
+<arg>xpath=//input[@name='cvc']</arg>
+<arg>123</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.250516" elapsed="0.060545"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:30.314189" level="INFO">Fills the text '12/25' in the given field.</msg>
+<arg>xpath=//input[@name='expiry_month']</arg>
+<arg>12/25</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.313295" elapsed="0.023992"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-21T16:03:30.338957" level="INFO">Fills the text '2025' in the given field.</msg>
+<arg>xpath=//input[@name='expiry_year']</arg>
+<arg>2025</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.338324" elapsed="0.031487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:32.372670" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:30.370333" elapsed="2.002522"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:32.374443" level="INFO">Clicks the element 'xpath=//button[normalize-space()='Pay and Confirm Order']'.</msg>
+<arg>xpath=//button[normalize-space()='Pay and Confirm Order']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:32.373603" elapsed="3.246923"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:35.679394" level="INFO">Waited for Element with selector //p[normalize-space()='Congratulations! Your order has been confirmed!'] at state visible</msg>
+<arg>//p[normalize-space()='Congratulations! Your order has been confirmed!']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:35.621288" elapsed="0.058297"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 12. Successfully placed the order</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:35.680115" elapsed="0.000479"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:37.681396" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:35.680875" elapsed="2.000744"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:37.692574" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Download Invoice'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Download Invoice']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:37.682633" elapsed="0.010136"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:37.693881" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Download Invoice']'.</msg>
+<arg>xpath=//a[normalize-space()='Download Invoice']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:37.693199" elapsed="0.773103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 13. Successfully downloaded the invoice</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:38.467693" elapsed="0.002433"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:38.478827" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Continue'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Continue']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:38.470631" elapsed="0.008366"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:38.479983" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Continue']'.</msg>
+<arg>xpath=//a[normalize-space()='Continue']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:38.479338" elapsed="0.870209"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:44.350979" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:39.350128" elapsed="5.001158"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:44.386905" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Delete Account'] at state visible</msg>
+<arg>xpath=//a[normalize-space()='Delete Account']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:44.352172" elapsed="0.035100"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:44.389751" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Delete Account']'.</msg>
+<arg>xpath=//a[normalize-space()='Delete Account']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:44.388129" elapsed="0.680816"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-21T16:03:45.098503" level="INFO">Waited for Element with selector xpath=//b[normalize-space()='Account Deleted!'] at state visible</msg>
+<arg>xpath=//b[normalize-space()='Account Deleted!']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-21T16:03:45.069465" elapsed="0.029283"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n 14. Successfully deleted the account</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T16:03:45.099242" elapsed="0.000683"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-21T16:03:45.101245" level="INFO">Clicks the element 'xpath=//a[normalize-space()='Continue']'.</msg>
+<arg>xpath=//a[normalize-space()='Continue']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-21T16:03:45.100414" elapsed="0.840883"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T16:03:50.943246" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T16:03:45.942079" elapsed="5.001385"/>
+</kw>
+<msg time="2025-09-21T16:03:50.978232" level="INFO">Switching context to context=86f7d229-7765-44f7-a30a-77a7d5a19081 in CURRENT</msg>
+<msg time="2025-09-21T16:03:51.001525" level="INFO">Successfully changed active context: context=86f7d229-7765-44f7-a30a-77a7d5a19081</msg>
+<msg time="2025-09-21T16:03:51.109016" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-09-21T16:02:44.540680" elapsed="66.403970"/>
+</test>
+<status status="PASS" start="2025-09-21T16:02:44.350702" elapsed="66.762233"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testfile" id="s1" pass="1" fail="0" skip="0">Testfile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
