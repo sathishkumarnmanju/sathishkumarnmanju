@@ -21,37 +21,37 @@ Case 1 : Login to SauceDemo
     Wait For Elements State    id=login-button    visible
     Click    id=login-button
     Get Title    EQUALS    Swag Labs
-    Log To Console    1. Successfully logged in to the application
+    Log To Console   \n 1. Successfully logged in to the application
     Wait For Elements State    xpath=//div[normalize-space()='Sauce Labs Backpack']    visible
     Click    xpath=//div[normalize-space()='Sauce Labs Backpack']
-    Log To Console    2. Successfully Clicked product from Sauce Labs Backpack
+    Log To Console   \n 2. Successfully Clicked product from Sauce Labs Backpack
     Wait For Elements State    id=add-to-cart    visible 
     Click    id=add-to-cart
-    Log To Console    3. Successfully added product to the cart
+    Log To Console   \n 3. Successfully added product to the cart
     Wait For Elements State    id=back-to-products    visible
     Click    id=back-to-products
-    Log To Console    4. Successfully clicked back to products
+    Log To Console   \n 4. Successfully clicked back to products
     Wait For Elements State    xpath=//div[normalize-space()='Sauce Labs Bolt T-Shirt']    visible
     Click    xpath=//div[normalize-space()='Sauce Labs Bolt T-Shirt']
-    Log To Console    5. Successfully Clicked product from Sauce Labs Bolt T-Shirt
+    Log To Console   \n 5. Successfully Clicked product from Sauce Labs Bolt T-Shirt
     Click    id=add-to-cart
-    Log To Console    6. Successfully added product to the cart
+    Log To Console   \n 6. Successfully added product to the cart
     Wait For Elements State    xpath=//a[@class='shopping_cart_link']    visible
     Click    xpath=//a[@class='shopping_cart_link']
-    Log To Console    7. Successfully clicked on the cart
+    Log To Console   \n 7. Successfully clicked on the cart
     Wait For Elements State    id=checkout    visible
     Click    id=checkout
-    Log To Console    8. Successfully clicked on the checkout
+    Log To Console   \n 8. Successfully clicked on the checkout
     Wait For Elements State    id=first-name    visible
     Fill Text    id=first-name    ${FIRSTNAME}
     Fill Text    id=last-name     ${LASTNAME}
     Fill Text    id=postal-code   ${POSTALCODE}
     Wait For Elements State    id=continue    visible
     Click    id=continue
-    Log To Console    9. Successfully filled the details
+    Log To Console   \n 9. Successfully filled the details
     Wait For Elements State    id=finish    visible
     Click    id=finish
-    Log To Console    10. Successfully clicked on the finish button
+    Log To Console   \n 10. Successfully clicked on the finish button
     Wait For Elements State    id=back-to-products    visible
     Click    id=back-to-products
     Wait For Elements State    id=react-burger-menu-btn    visible
